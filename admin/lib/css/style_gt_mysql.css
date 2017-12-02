@@ -1,0 +1,37 @@
+/*Style css pour gt*/
+/*****************Style généraux***************************/
+.txtGras{
+    font-weight: bold;
+    
+}
+#titre{
+    color:#900;
+    margin-top:-10px;
+    
+}
+.centrer{
+    text-align: center;
+}
+
+/****************Style balises*****************************/
+nav{
+    margin-top:15%;
+}
+nav a{
+    color:#900;
+    text-decoration: none;
+    
+}
+footer{
+    clear:both;
+    color:#666;
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    padding-right: 15%;
+    padding-top:1%;
+}
+
+/***************style couleurs****************************/
+
+
