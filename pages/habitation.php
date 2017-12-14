@@ -1,14 +1,18 @@
 <?php
 //on a besoin des classe Type_gateauDB et Type_gateau
-$types = new Type_gateauDB($cnx);
-$tabTypes = $types->getType_gateau();
+$types = new TypeHabitationDB($cnx);
+$tabTypes = $types->getTypeHabitation();
 $nbrTypes = count($tabTypes);
 
 //traitement du formulaire de choix du type
 if (isset($_GET['choix_type'])) {
-    $cake = new Vue_gateauxDB($cnx);
-    $liste = $cake->getVue_gateauxType($_GET['id_th']);
+    $cake = new Vue_HabitationDB($cnx);
+    $liste = $cake->getVue_habitationType($_GET['id_th']);
+    
+  
     $nbrCakes = count($liste);
+    var_dump($liste);
+    print $nbrCakes; 
 }
 ?>
 <div class="container">
@@ -16,7 +20,7 @@ if (isset($_GET['choix_type'])) {
 
         <div class="row">
             <div class="col-sm-1">
-                <span class="txtGras">Th&egrave;me:</span>
+                <span class="txtGras">Votre choix</span>
             </div>
             <div class="col-sm-3">
                 <select name="id_th" id="id_th">
@@ -33,7 +37,7 @@ if (isset($_GET['choix_type'])) {
                 </select>
             </div>
             <div class="col-sm-2">
-                <input type="submit" name="choix_type" value="Choisir"/>
+                <input type="submit" name="choix_type" value="Choisir" id="choisir_type"/>
             </div>
 
         </div>
@@ -44,6 +48,7 @@ if (isset($_GET['choix_type'])) {
 <div class="container">
     <?php
     if (isset($liste)) {
+        print "affiche";
         if ($nbrCakes > 0) {
             ?>
             <div class="row">
@@ -82,7 +87,7 @@ if (isset($_GET['choix_type'])) {
                         <div class="row">
                             <div class="col-sm-12 txtGras">
                                 <br/>
-                                <a href="index.php?page=Location&id=<?php print $liste[$i]['id_habitation']; ?>">
+                                <a href="index.php?page=location&id=<?php print $liste[$i]['id_habitation']; ?>">
                                     Louer
                                 </a>
                                 <br/>

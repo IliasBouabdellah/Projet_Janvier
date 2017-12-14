@@ -3,10 +3,10 @@
         <a href="index.php?page=accueil" class="txtGras">Accueil</a>
     </div>
     <div class="col-sm-11">
-        <a href="index.php?page=produit" class="txtGras">Nos Produits</a>
+        <a href="index.php?page=habitation" class="txtGras">Nos habitations</a>
     </div>
     <div class="col-sm-11">
-        <a href="index.php?page=commande" class="txtGras">Commander</a>
+        <a href="index.php?page=Location" class="txtGras">Louer</a>
     </div>
     <div class="col-sm-11">
         <a href="index.php?page=contact" class="txtGras">Contact</a>
