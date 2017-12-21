@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$dsn='mysql:host=localhost;dbname=projet_location';
+$dsn='mysql:host=localhost;dbname=gestion_loc';
 $user='root';
 $pass='';
 

@@ -8,7 +8,7 @@ class Vue_HabitationDB {
     //liste des gâteaux correspondant au choix du type dans liste déroulante
     function getVue_habitationType($id){
          try {            
-            $query = "SELECT id_habitation,id_th,nom_type,prix,carateristique FROM vue_habitation where id_th=:id_th";
+            $query = "SELECT * FROM vue_habitation where id_th=:id_th";
             $resultset = $this->_db->prepare($query);  
             $resultset->bindValue(':id_th',$id);
             $resultset->execute();
@@ -32,7 +32,7 @@ class Vue_HabitationDB {
 
     function getVue_habitation(){
          try {
-            $query = "SELECT id_habitation,id_th,nom_type,prix,carateristique FROM vue_habitation order by id_TH";
+            $query = "SELECT * FROM vue_habitation order by id_TH";
             $resultset = $this->_db->prepare($query);  
             $resultset->execute();
             $data = $resultset->fetchAll();
@@ -54,7 +54,7 @@ class Vue_HabitationDB {
     
     function getVue_habitationloc($id){
          try {            
-            $query = "SELECT id_habitation,id_th,nom_type,prix,carateristique FROM vue_habitation where id_TH=:id_TH";
+            $query = "SELECT * FROM vue_habitation where id_TH=:id_TH";
             $resultset = $this->_db->prepare($query);  
             $resultset->bindValue(':id_TH',$id);
             $resultset->execute();

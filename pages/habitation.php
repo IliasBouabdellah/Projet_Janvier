@@ -11,8 +11,8 @@ if (isset($_GET['choix_type'])) {
     
   
     $nbrCakes = count($liste);
-    var_dump($liste);
-    print $nbrCakes; 
+    //var_dump($liste);
+   // print $nbrCakes; 
 }
 ?>
 <div class="container">
