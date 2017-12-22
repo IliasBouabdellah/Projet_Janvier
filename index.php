@@ -43,7 +43,7 @@ session_start();
                     </div>
                     <div class="col-sm-10">
                         <div class="row">
-                            <div class="col-sm-11"><a href="admin/classes/Admin_login.php" class="float-right">Administration</a></div>
+                            <div class="col-sm-11"><a href="./admin/index.php" class="float-right">Administration</a></div>
                         </div>
                         <section>
                             <?php

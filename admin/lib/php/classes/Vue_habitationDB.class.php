@@ -7,6 +7,7 @@ class Vue_HabitationDB {
     
     //liste des gâteaux correspondant au choix du type dans liste déroulante
     function getVue_habitationType($id){
+           
          try {            
             $query = "SELECT * FROM vue_habitation where id_th=:id_th";
             $resultset = $this->_db->prepare($query);  

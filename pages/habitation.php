@@ -16,7 +16,7 @@ if (isset($_GET['choix_type'])) {
 }
 ?>
 <div class="container">
-    <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">  
+    <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_location">  
 
         <div class="row">
             <div class="col-sm-1">
@@ -48,13 +48,13 @@ if (isset($_GET['choix_type'])) {
 <div class="container">
     <?php
     if (isset($liste)) {
-        print "affiche";
+      //  print "affiche";
         if ($nbrCakes > 0) {
             ?>
             <div class="row">
                 <div class="col-sm-12 txtGras txt180">
                     <?php
-                    print utf8_decode($liste[0]['nom_type']);
+                    print utf8_decode($liste[0]['NOM_TYPE']);
                     ?>
                 </div>                             
             </div>
@@ -63,7 +63,7 @@ if (isset($_GET['choix_type'])) {
                 ?>
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="admin/images/<?php print $liste[$i]['photo']; ?>" alt="maison"/>
+                        <img src="admin/images/<?php print $liste[$i]['PHOTO']; ?>" alt="maison"/>
                     </div>
                     <div class="col-sm-4 text-center">                        
                         <br/>
@@ -71,7 +71,7 @@ if (isset($_GET['choix_type'])) {
                             <div class="col-sm-12 text-danger txtRouge">
                                 <span class="txt150">
                                     <?php
-                                    print utf8_decode($liste[$i]['carateristique']);
+                                    print utf8_decode($liste[$i]['CARATERISTIQUE']);
                                     ?>
                                 </span>
                             </div>                             
@@ -80,14 +80,14 @@ if (isset($_GET['choix_type'])) {
                             <div class="col-sm-12 txtGras">
                                 <br/>
                                 <?php
-                                print utf8_decode($liste[$i]['prix']);
+                                print utf8_decode($liste[$i]['PRIX']);
                                 ?>
                             </div>                             
                         </div>
                         <div class="row">
                             <div class="col-sm-12 txtGras">
                                 <br/>
-                                <a href="index.php?page=location&id=<?php print $liste[$i]['id_habitation']; ?>">
+                                <a href="index.php?page=location&id=<?php print $liste[$i]['ID_HABITATION']; ?>">
                                     Louer
                                 </a>
                                 <br/>
