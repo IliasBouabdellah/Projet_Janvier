@@ -9,6 +9,13 @@
         <a href="index.php?page=Location" class="txtGras">Louer</a>
     </div>
     <div class="col-sm-11">
+        <a href="index.php?page=inscription" class="txtGras">Inscription</a>
+    </div>
+     <div class="col-sm-11">
         <a href="index.php?page=contact" class="txtGras">Contact</a>
     </div>
+    
+    
+    
+    
 </div>

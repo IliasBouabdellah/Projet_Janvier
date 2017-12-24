@@ -7,7 +7,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Berliore-d&eacute;lices</title>
+        <title></title>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <div class="container">
 
             <header>
-                <img src="../images/cropped-banniere-site.png" alt="Berlioz"/>
+                <img src="/images/cropped-banniere-site.png" alt="banniere"/>
                 <link rel="stylesheet" type="text/css" href="lib/css/Style_patisserie.css"/>
 
             </header>
@@ -33,8 +33,8 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                     <nav>
                         <?php
                         if (isset($_SESSION['admin'])) {
-                            if (file_exists("./lib/php/a_gt_menu.php")) {
-                                include ("./lib/php/a_gt_menu.php");
+                            if (file_exists("./lib/php/a_menu.php")) {
+                                include ("./lib/php/a_menu.php");
                             }
                         }
                         ?>
@@ -59,7 +59,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                         <section>
                             <?php
                             if (!isset($_SESSION['admin'])) {
-                                $_SESSION['page'] = "admin_login";
+                                $_SESSION['page'] = "Connect_login";
                             } else {
                                 if (!isset($_SESSION['page'])) {
 
