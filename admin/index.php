@@ -22,8 +22,8 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <div class="container">
 
             <header>
-                <img src="/images/cropped-banniere-site.png" alt="banniere"/>
-                <link rel="stylesheet" type="text/css" href="lib/css/Style_patisserie.css"/>
+                <img src="../images/cropped-banniere-site.png" alt="banniere"/>
+                <!--<link rel="stylesheet" type="text/css" href="lib/css/Style_patisserie.css"/>-->
 
             </header>
         </div>
