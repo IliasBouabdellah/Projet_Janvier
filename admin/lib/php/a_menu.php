@@ -10,7 +10,7 @@
         <a href="./index.php?page=habitation" class="txtGras">Nos habitations</a>
     </div>
     <div class="col-sm-11">
-        <a href=./"index.php?page=Location" class="txtGras">Louer</a>
+        <a href=./"index.php?page=location" class="txtGras">Louer</a>
     </div>
      <div class="col-sm-11">
         <a href="./index.php?page=contact" class="txtGras">Contact</a>

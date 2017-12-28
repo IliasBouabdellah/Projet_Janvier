@@ -4,7 +4,7 @@ if(file_exists('admin/lib/php/dbconnect.php')){
     
     include('admin/lib/php/dbconnect.php');
     include('admin/lib/php/autoload.php');
-    print "ok ";
+    //print "ok ";
     
     
 }

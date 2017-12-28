@@ -4,7 +4,7 @@ if(isset($_POST['submit_login'])){
     
     $log=new AdminDB($cnx);
     $admin=$log->isAdmin($_POST['login'],$_POST['password']);
-    var_dump($admin);
+    //var_dump($admin);
     if(is_null($admin)){
         $message="<br/> données incorrectes";
     }
@@ -12,7 +12,7 @@ if(isset($_POST['submit_login'])){
         $_SESSION['admin']=1;
         $message="Authentifié!";
         ?>
-<meta http-equiv="refresh": content="0;url=index.php?page=accueil_admin">
+<meta http-equiv="refresh": content="0;url=index.php?page=accueil_user">
         <?php
     }
   

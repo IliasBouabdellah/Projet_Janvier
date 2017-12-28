@@ -23,7 +23,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 
             <header>
                 <img src="../images/cropped-banniere-site.png" alt="banniere"/>
-                <!--<link rel="stylesheet" type="text/css" href="lib/css/Style_patisserie.css"/>-->
+                 <link rel="stylesheet" type="text/css" href="../lib/css/style_masion.css"/>
 
             </header>
         </div>

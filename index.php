@@ -28,6 +28,7 @@ session_start();
         <div class="container">
             <header>
                 <img src="images/cropped-banniere-site.png" alt="banniere"/>
+                 <link rel="stylesheet" type="text/css" href="admin/lib/css/style_masion.css"/>
             </header>
 
             <div class="container">
@@ -43,7 +44,7 @@ session_start();
                     </div>
                     <div class="col-sm-10">
                         <div class="row">
-                            <div class="col-sm-11"><a href="./admin/index.php" class="float-right">Administration</a></div>
+                            <div class="col-sm-11"><a href="./admin/index.php" class="float-right">Connexion</a></div>
                         </div>
                         <section>
                             <?php
