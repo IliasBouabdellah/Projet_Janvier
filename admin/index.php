@@ -14,7 +14,8 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script src="lib/js/gt_functions.js"></script>
         <script src="lib/js/gt_functionsVal.js"></script>
-        <link rel="stylesheet" type="text/css" href="admin/lib/css/bootstrap-4/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/style_maison.css">
         <script src="lib/js/jquery-validation-1/dist/jquery.validate.js"></script>
     </head>
     <body> 
@@ -23,7 +24,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 
             <header>
                 <img src="../images/cropped-banniere-site.png" alt="banniere"/>
-                 <link rel="stylesheet" type="text/css" href="../lib/css/style_masion.css"/>
+
 
             </header>
         </div>
@@ -78,7 +79,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 
                                 include ($path);
                             } else {
-                                print "Oupssss";
+                                //print "Oupssss";
                             }
                             ?>
 
@@ -86,11 +87,11 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                     </div>
                     <section> Contenu utile</section>
                     <footer>
-<?php
-if (file_exists("lib/php/Projet_footer.php")) {
-    include("lib/php/Projet_footer.php");
-}
-?>
+                        <?php
+                        if (file_exists("lib/php/Projet_footer.php")) {
+                            include("lib/php/Projet_footer.php");
+                        }
+                        ?>
                     </footer>
                 </div>
             </div>

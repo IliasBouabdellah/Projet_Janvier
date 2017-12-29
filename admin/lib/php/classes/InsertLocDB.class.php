@@ -56,7 +56,10 @@ class InsertLocDB extends InsertLoc {
         } catch (PDOException $e) {
             print "<br/>Echec de l'insertion";
             print $e->getMessage();
-        }
+        
+         }
+         
+         print "Merci pour votre location";
 
 
 

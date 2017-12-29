@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_SESSION['admin'])){
+if(!isset($_SESSION['id_user'])){
     
     
     ?>

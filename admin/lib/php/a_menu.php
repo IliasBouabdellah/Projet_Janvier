@@ -4,16 +4,16 @@
     </div>
     
     <div class="col-sm-11">
-        <a href="./index.php?page=accueil" class="txtGras">Accueil</a>
+        <a href="index.php?page=acceuil_user" class="txtGras">Accueil</a>
     </div>
     <div class="col-sm-11">
-        <a href="./index.php?page=habitation" class="txtGras">Nos habitations</a>
+        <a href="index.php?page=habitation" class="txtGras">Nos habitations</a>
     </div>
-    <div class="col-sm-11">
-        <a href=./"index.php?page=location" class="txtGras">Louer</a>
+   <div class="col-sm-11">
+        <a href="index.php?page=Liste_proprio" class="txtGras">Contacter un proprio</a>
     </div>
      <div class="col-sm-11">
-        <a href="./index.php?page=contact" class="txtGras">Contact</a>
+        <a href="index.php?page=contacte" class="txtGras">Contact</a>
     </div>
     
     
