@@ -16,7 +16,7 @@ if (isset($_GET['choix_type'])) {
 }
 ?>
 <div class="container">   
-<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_location">        
+<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_location" name="from_loc">        
   <table class="table table-hover">
     <thead>
       <tr>
@@ -33,7 +33,7 @@ if (isset($_GET['choix_type'])) {
                     }
                     ?>
                 </select></th>
-        <th><input type="submit" name="choix_type" value="Choisir" id="choisir_type"/></th>
+        <th><input type="submit" name="choix_type" value="Choisir" id="choisir_type" onclick="document.form_loc.choix_type.style.visibility='hidden';" /></th>
       </tr>
     </thead>
   </table>
