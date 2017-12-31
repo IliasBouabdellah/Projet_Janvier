@@ -12,7 +12,7 @@ if(isset($_POST['submit_login'])){
         $_SESSION['admin']=1;
         $message="Authentifié!";
         ?>
-<meta http-equiv="refresh": content="0;url=index.php?page=accueil_user">
+<meta http-equiv="refresh": content="0;url=index.php?page=acceuil_user">
         <?php
     }
   

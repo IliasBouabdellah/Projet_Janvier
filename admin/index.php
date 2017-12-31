@@ -16,6 +16,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <script src="lib/js/gt_functionsVal.js"></script>
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="lib/css/style_maison.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
         <script src="lib/js/jquery-validation-1/dist/jquery.validate.js"></script>
     </head>
     <body> 
@@ -48,7 +49,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                         <div class="col-sm-11">
                             <?php if (isset($_SESSION['admin'])) {
                                 ?>
-                                }
+                               
                                 <a href="index.php?page=disconnect" class="float-right">
                                     Déconnexion
                                 </a>
@@ -85,7 +86,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
 
                         </section>
                     </div>
-                    <section> Contenu utile</section>
+                    <!--<section> Contenu utile</section>-->
                     <footer>
                         <?php
                         if (file_exists("lib/php/Projet_footer.php")) {

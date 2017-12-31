@@ -30,10 +30,14 @@ class AdminDB extends Admin {
             if (!empty($data)) {
                 try {
                     $_admin[] = new Admin($data);
-                  $iduser = $_admin[0]->ID_USER;
+                    $iduser = $_admin[0]->ID_USER;
+                    
+                  
                     
                     if ($_admin[0]->USERNAME == "$login" && $_admin[0]->PASSWORD == $password) {
                       $_SESSION['id_user'] = $iduser;
+                      $_SESSION['login']=$login;
+                      
                         
                         return $_admin;
                     } else {

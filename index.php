@@ -17,10 +17,10 @@ session_start();
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/style_maison.css">
-        
+        <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
         <script src=""></script>
-        <!--<link rel="stylesheet" type="text/css" href="admin/lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="admin/lib/c-->
+        <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
+        <!--<link rel="stylesheet" type="text/css" href="admin/lib/c-->
 
     </head>
 
@@ -30,7 +30,7 @@ session_start();
         <div class="container">
             <header>
                 <img src="images/cropped-banniere-site.png" alt="banniere"/>
-                 <link rel="stylesheet" type="text/css" href="admin/lib/css/style_masion.css">
+                 <!--<link rel="stylesheet" type="text/css" href="admin/lib/css/style_masion.css">-->
 
             </header>
 

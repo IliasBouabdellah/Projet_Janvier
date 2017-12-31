@@ -1,5 +1,17 @@
 /*Style css pour gt*/
 /*****************Style généraux***************************/
+body 
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+    height:100%;
+}
+
+.maison {
+width:100px;
+height:100px;
+}
+
 .txtGras{
     font-weight: bold;
     
@@ -31,6 +43,9 @@ footer{
     padding-right: 15%;
     padding-top:1%;
 }
+
+
+
 
 /***************style couleurs****************************/
 

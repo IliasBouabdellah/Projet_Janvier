@@ -1,6 +1,6 @@
 <div class="row">
      <div class="col-sm-12">
-        <span class="txtGras">Vous êtes connecté Mr <?php print $_SESSION['id_user'] ?></span><br/><br/>
+        <span class="txtGras">Vous êtes connecté <?php print $_SESSION['login']?></span><br/><br/>
     </div>
     
     <div class="col-sm-11">

@@ -6,7 +6,7 @@
 //attendre que la page soit chargé
 $(document).ready(function(){
    $("#gt_caroussel").caroussel({
-       interval:1500,
+       interval:1000,
        pause:false
        
     
@@ -20,8 +20,5 @@ $(document).ready(function(){
    
    
    
-   
-    
-    
 });
 
