@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     //champs -> identifiants id=""
-    $("#form_commande").validate({
+    $("#form_inscription").validate({
         rules: {
             email1: "required",
             email2: {
@@ -22,13 +22,13 @@ $(document).ready(function () {
                 regex: /^(0)[0-9]{2,3}\/[0-9]{2}\.[0-9]{2}\.[0-9]{2}$/
             },
             adresse: "required",
-            numero: "required",
+           
             codepostal: {
                 required: true,
                 min: 1000,
                 max: 9999
             },
-            localite: "required",
+            pseudo: "required",
             submitHandler: function (form) {
                 form.submit();
             }

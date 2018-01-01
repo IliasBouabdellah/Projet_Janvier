@@ -1,6 +1,6 @@
 <?php
 include ('./admin/lib/php/php_file_include.php');
-print $dsn;
+//print $dsn;
 $cnx = Connexion::getinstance($dsn, $user, $pass);
 
 session_start();
@@ -19,6 +19,12 @@ session_start();
         <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/style_maison.css">
         <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
         <script src=""></script>
+        <script src="../Projet_janvier/admin/lib/js/dist/jquery.validate.js"></script>
+        <script src="../Projet_janvier/admin/lib/js/dist/jquery.validate.min.js"></script>
+        <script src="../Projet_janvier/admin/lib/js/gt_functions.js"></script>
+        <script src="../Projet_janvier/admin/lib/js/gt_functionsVal.js"></script>
+        <script src="../Projet_janvier/admin/lib/js/gt_functionsAjax.js"></script>
+        
         <link rel="stylesheet" type="text/css" href="../Projet_janvier/admin/lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
         <!--<link rel="stylesheet" type="text/css" href="admin/lib/c-->
 

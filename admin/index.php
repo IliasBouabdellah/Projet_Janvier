@@ -17,8 +17,9 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="lib/css/style_maison.css">
         <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-4.0.0-beta/dist/css/bootstrap.css"/>
-        <script src="lib/js/jquery-validation-1/dist/jquery.validate.js"></script>
-    </head>
+        <script src="lib/js/dist/jquery.validate.js"></script>
+        <script src="lib/js/dist/jquery.validate.min.js"></script>
+        <script src="lib/js/verification_date.js"></script>
     <body> 
 
         <div class="container">
